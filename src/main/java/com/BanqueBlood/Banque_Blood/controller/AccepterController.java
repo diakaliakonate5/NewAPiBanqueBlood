@@ -65,4 +65,8 @@ public class AccepterController {
     List<Accepter> accepterByDemande(@PathVariable("id") Long id){
         return accepterService.afficherByDemande(id);
     }
+    @GetMapping("/accepterByEtatAndUser/{id}")
+    List<Accepter> accepterByEtatAndUser(@PathVariable("id") Long id){
+        return accepterService.afficherByEtatAndUser(id);
+    }
 }

@@ -39,5 +39,14 @@ public class ConfirmerController {
         return  confirmerService.afficherConfirmerByAccepter(accepter);
     }
 
+    @GetMapping("/confirmByEtatAndUser/{id}")
+    List<Confirmer> confirmByEtatAndUser(@PathVariable("id") Long id){
+        return  confirmerService.afficherConfirmByUser(id);
+    }
+    @GetMapping("/confirmByUser/{id}")
+    List<Confirmer> confirmByDemande(@PathVariable("id") Long id){
+        return confirmerService.afficherConfirmByAccept(id);
+    }
+
 
 }

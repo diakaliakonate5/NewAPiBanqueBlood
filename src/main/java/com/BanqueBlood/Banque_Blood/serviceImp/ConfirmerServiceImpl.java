@@ -59,11 +59,23 @@ public class ConfirmerServiceImpl implements ConfirmerService {
 
     @Override
     public Confirmer afficherConfirmById(Long id) {
-        return null;
+        Confirmer confirmer = confirmerRepository.findById(id).get();
+        confirmer.setEtat("lu");
+        return confirmerRepository.save(confirmer);
     }
 
     @Override
     public Confirmer afficherConfirmerByAccepter(Accepter accepter) {
         return confirmerRepository.findByAccepter(accepter);
+    }
+
+    @Override
+    public List<Confirmer> afficherConfirmByUser(Long id) {
+        return confirmerRepository.findByEtatAndUser(id);
+    }
+
+    @Override
+    public List<Confirmer> afficherConfirmByAccept(Long id) {
+        return confirmerRepository.findByAccepteurByConfirm(id);
     }
 }

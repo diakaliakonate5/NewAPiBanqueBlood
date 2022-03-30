@@ -25,4 +25,7 @@ public interface AccepterRepository extends JpaRepository <Accepter, Long> {
 
     @Query(value = "SELECT ac FROM Accepter ac, Demande de, Utilisateur us WHERE ac.demande.id = de.id AND de.utilisateur.id = us.id AND us.id =:id")
     List<Accepter> findByAccepteurByDemande(@Param("id") Long id);
+
+    @Query(value = "SELECT ac FROM Accepter ac, Demande  de, Utilisateur  us WHERE ac.etat=false AND ac.demande.id = de.id AND de.utilisateur.id = us.id AND us.id =:id")
+    List<Accepter> findByEtatAndUser(@Param("id") Long id);
 }

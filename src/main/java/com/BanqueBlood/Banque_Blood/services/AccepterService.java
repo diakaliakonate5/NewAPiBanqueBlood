@@ -18,5 +18,6 @@ public interface AccepterService {
     public  List<Accepter> afficherByEtat(boolean etat);
     public List<Accepter> afficherByAccepter(Utilisateur user);
     public List<Accepter> afficherByDemande(Long id);
+    public  List<Accepter> afficherByEtatAndUser(Long id);
 
 }

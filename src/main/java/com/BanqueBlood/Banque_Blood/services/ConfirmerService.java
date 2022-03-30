@@ -12,4 +12,6 @@ public interface ConfirmerService {
     Confirmer modifierConfirm(Confirmer confirmer, Long id);
     Confirmer afficherConfirmById(Long id);
     Confirmer afficherConfirmerByAccepter(Accepter accepter);
+    public  List<Confirmer> afficherConfirmByUser(Long id);
+    public  List<Confirmer> afficherConfirmByAccept(Long id);
 }

@@ -94,4 +94,9 @@ public class AccepterServiceImp implements AccepterService {
     public List<Accepter> afficherByDemande(Long id) {
         return accepterRepository.findByAccepteurByDemande(id);
     }
+
+    @Override
+    public List<Accepter> afficherByEtatAndUser(Long id) {
+        return accepterRepository.findByEtatAndUser(id);
+    }
 }
