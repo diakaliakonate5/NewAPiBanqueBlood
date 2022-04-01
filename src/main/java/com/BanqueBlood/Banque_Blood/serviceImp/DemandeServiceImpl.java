@@ -3,13 +3,10 @@ package com.BanqueBlood.Banque_Blood.serviceImp;
 import com.BanqueBlood.Banque_Blood.model.Demande;
 import com.BanqueBlood.Banque_Blood.model.Notification;
 import com.BanqueBlood.Banque_Blood.model.Utilisateur;
-import com.BanqueBlood.Banque_Blood.model.Vue;
 import com.BanqueBlood.Banque_Blood.repository.DemandeRepository;
 import com.BanqueBlood.Banque_Blood.repository.NotificationRepository;
 import com.BanqueBlood.Banque_Blood.repository.UtilsateursRepository;
 import com.BanqueBlood.Banque_Blood.services.DemandeService;
-import com.BanqueBlood.Banque_Blood.services.NotificationService;
-import com.BanqueBlood.Banque_Blood.services.VueService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -22,8 +19,7 @@ public class DemandeServiceImpl implements DemandeService {
     DemandeRepository demandeRepository;
     @Autowired
     NotificationRepository notificationRepository;
-    @Autowired
-    VueService vueService;
+
     @Autowired
     UtilsateursRepository utilsateursRepository;
 

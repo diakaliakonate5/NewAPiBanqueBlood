@@ -34,7 +34,7 @@ public class AccepterServiceImp implements AccepterService {
             return null;
             //throw new EntityNotFound("votre dernier don ne vaut pas 3 mois", ErrorsCode.DON_INVALID);
         }
-
+        accepter.setEtat(false);
         accepter.setDateQuarantaine(accepter.getDate().plusMonths(3));
         return  accepterRepository.save(accepter);
     }

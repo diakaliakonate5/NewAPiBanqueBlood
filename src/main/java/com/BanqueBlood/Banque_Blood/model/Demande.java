@@ -20,10 +20,7 @@ public class Demande implements Serializable {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     Long id;
     private  int nbrepoche ;
-
-    @ManyToOne
-    @JoinColumn(name = "vue_id")
-    private Vue vue;
+    
 
     @ManyToOne
     private Utilisateur utilisateur;

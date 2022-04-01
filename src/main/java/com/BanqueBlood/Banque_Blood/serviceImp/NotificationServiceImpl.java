@@ -1,7 +1,6 @@
 package com.BanqueBlood.Banque_Blood.serviceImp;
 import com.BanqueBlood.Banque_Blood.model.Notification;
 import com.BanqueBlood.Banque_Blood.model.Utilisateur;
-import com.BanqueBlood.Banque_Blood.model.Vue;
 import com.BanqueBlood.Banque_Blood.repository.NotificationRepository;
 import com.BanqueBlood.Banque_Blood.services.NotificationService;
 import org.springframework.beans.factory.annotation.Autowired;
