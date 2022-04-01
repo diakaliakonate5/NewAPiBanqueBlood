@@ -29,6 +29,16 @@ public class Admin {
     public Admin() {
     }
 
+    public Admin(String nom, String prenom, String adresse, int telephone, String email, String login, String password) {
+        this.nom = nom;
+        Prenom = prenom;
+        this.adresse = adresse;
+        this.telephone = telephone;
+        this.email = email;
+        this.login = login;
+        this.password = password;
+    }
+
     public Long getId() {
         return id;
     }
