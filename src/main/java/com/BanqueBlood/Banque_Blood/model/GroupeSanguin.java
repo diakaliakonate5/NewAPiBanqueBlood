@@ -19,6 +19,12 @@ public class GroupeSanguin {
     public GroupeSanguin() {
     }
 
+    public GroupeSanguin(String type, String donne, String recois) {
+        this.type = type;
+        this.donne = donne;
+        this.recois = recois;
+    }
+
     public Long getId() {
         return id;
     }

@@ -22,6 +22,13 @@ public class BanqueSang {
     public BanqueSang() {
     }
 
+    public BanqueSang(String nom, String adresse, int telephone, String email) {
+        this.nom = nom;
+        this.adresse = adresse;
+        this.telephone = telephone;
+        this.email = email;
+    }
+
     public Long getId() {
         return id;
     }
