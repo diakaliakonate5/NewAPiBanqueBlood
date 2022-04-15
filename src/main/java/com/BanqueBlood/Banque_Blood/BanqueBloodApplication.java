@@ -33,12 +33,14 @@ public class BanqueBloodApplication implements CommandLineRunner {
 		banqueSangRepository.save(banqueSang);
 		BanqueSang banqueSang1 = new BanqueSang("CNTS", "Quinzambougou", 7776677, "CNTS@gmail.com");
 		banqueSangRepository.save(banqueSang1);
-		GroupeSanguin groupeSanguin = new GroupeSanguin("A+", "A+", "A+");
+	/*	GroupeSanguin groupeSanguin = new GroupeSanguin("A+", "A+", "A+");
 		groupeSanguinRepository.save(groupeSanguin);
 		GroupeSanguin groupeSanguin1= new GroupeSanguin("A-", "A+", "A+");
 		groupeSanguinRepository.save(groupeSanguin1);
 		GroupeSanguin groupeSanguin2 = new GroupeSanguin("B+", "A+", "A+");
 		groupeSanguinRepository.save(groupeSanguin2);
+
+	 */
 
 
 	}
